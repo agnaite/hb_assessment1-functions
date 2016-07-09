@@ -107,13 +107,21 @@ def hometown_greeting(town, first, last):
     print "Hi, {}, {}".format(full_name(first, last), greeting)
 
 
-#####################################################################
+def increment(x=1):
+    """Sums up x and add(y)
 
-# PART THREE
+    Args:
+        x: number with default value of 1
 
-# 1. Write a function ``increment()`` with a nested inner function, ``add()`` 
-#    inside of it. The outer function should take ``x``, an integer which
-#    defaults to 1. The inner function should take ``y`` and add ``x`` and ``y`` together.
+    Returns:
+        sum of two numbers, the latter from nested function add()
+
+    """
+
+    def add(y):
+        return y + x
+    return add
+
 
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call 
 #    addone with y = 5. Call again with y = 20. 
