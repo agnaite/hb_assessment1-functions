@@ -122,11 +122,23 @@ def increment(x=1):
         return y + x
     return add
 
+addfive = increment(5)
 
-# 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call 
-#    addone with y = 5. Call again with y = 20. 
+# instructions state that I'm supposed to call addone, but I think they meant addfive? Otherwise, I'm missing something.
+addfive(5)
+addfive(20)
 
-# 3. Make a function that takes in a number and a list of numbers. It should append
-#    the number to the list of numbers and return the list.
 
-#####################################################################
+def append_number(num, num_list):
+    """Appends a number to a list of numbers
+
+    Args:
+        num: a number
+        num_list: a list of numbers
+
+    Returns:
+        list of numbers with new number added to the end
+
+    """
+    num_list.append(num)
+    return num_list
