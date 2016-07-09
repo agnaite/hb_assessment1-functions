@@ -16,11 +16,26 @@ def get_item_cost(state, cost, tax=1.05):
 
     return cost * tax
 
-# PART TWO
 
-# 1. (a) Write a function, `is_berry()`, which takes a fruit name as a string
-#        and returns a boolean if the fruit is a "strawberry", "cherry", or
-#        "blackberry".
+def is_berry(fruit):
+    """Checks if argument matches certain values
+
+    Args:
+        fruit: a string
+
+    Returns:
+        True if argument matches "strawberry", "cherry", or "blackberry".
+        False otherwise.
+
+    """
+
+    if (fruit.lower() == "strawberry" or
+        fruit.lower() == "cherry" or
+        fruit.lower() == "blackberry"):
+        return True
+    else:
+        return False
+
 
 #    (b) Write another function, shipping_cost(), which calculates shipping cost
 #        by taking a fruit name as a string, calling the `is_berry()` function
