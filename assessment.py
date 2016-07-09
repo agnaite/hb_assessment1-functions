@@ -37,11 +37,6 @@ def is_berry(fruit):
         return False
 
 
-#    (b) Write another function, shipping_cost(), which calculates shipping cost
-#        by taking a fruit name as a string, calling the `is_berry()` function
-#        within the `shipping_cost()` function and returns `0` if ``is_berry()
-#        == True``, and `5` if ``is_berry() == False``.
-
 def shipping_cost(fruit):
     """Checks shipping cost based on type of fruit
 
@@ -59,8 +54,22 @@ def shipping_cost(fruit):
         return 5
 
 
-# 2. (a) Write a function, `is_hometown()`, which takes a town name as a string
-#        and evaluates to `True` if it is your hometown, and `False` otherwise.
+def is_hometown(town):
+    """Checks if a town passed in is a specific town
+
+    Args:
+        town: a string
+
+    Returns:
+        True if town is Kaunas; False otherwise.
+
+    """
+
+    if town.lower() == 'kaunas':
+        return True
+    else:
+        return False
+
 #
 #    (b) Write a function, `full_name()`, which takes a first and last name as
 #        arguments as strings and returns the concatenation of the two names in
