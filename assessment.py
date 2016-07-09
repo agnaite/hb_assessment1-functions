@@ -123,10 +123,9 @@ def increment(x=1):
     return add
 
 addfive = increment(5)
-
-# instructions state that I'm supposed to call addone, but I think they meant addfive? Otherwise, I'm missing something.
-addfive(5)
-addfive(20)
+addone = increment()
+addone(5)
+addone(20)
 
 
 def append_number(num, num_list):
