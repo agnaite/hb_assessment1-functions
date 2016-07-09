@@ -85,12 +85,27 @@ def full_name(first, last):
 
     return first + " " + last
 
-#
-#    (c) Write a function, `hometown_greeting()`, which takes a home town, a
-#        first name, and a last name as strings as arguments, calls both
-#        `is_hometown()` and `full_name()` and prints "Hi, 'full name here',
-#        we're from the same place!", or "Hi 'full name here', where are you 
-#        from?" depending on what `is_hometown()` evaluates to.
+
+def hometown_greeting(town, first, last):
+    """Prints a greeting based on full_name and is_hometown function results
+
+    Args:
+        town: hometown as a string
+        first: first name as a string
+        last: last name as a string
+
+    Return:
+        prints a greeting
+
+    """
+
+    if is_hometown(town):
+        greeting = "we're from the same place!"
+    else:
+        greeting = "where are you from?"
+
+    print "Hi, {}, {}".format(full_name(first, last), greeting)
+
 
 #####################################################################
 
