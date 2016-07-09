@@ -70,10 +70,21 @@ def is_hometown(town):
     else:
         return False
 
-#
-#    (b) Write a function, `full_name()`, which takes a first and last name as
-#        arguments as strings and returns the concatenation of the two names in
-#        one string.
+
+def full_name(first, last):
+    """Returns a full name
+
+    Args:
+        first: first name as a string
+        last: last name as a string
+
+    Returns:
+        full name as a string
+
+    """
+
+    return first + " " + last
+
 #
 #    (c) Write a function, `hometown_greeting()`, which takes a home town, a
 #        first name, and a last name as strings as arguments, calls both
